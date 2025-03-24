@@ -84,19 +84,18 @@
 
 .card__title {
   padding: 3px 10px;
-  font-weight: var(--font-weight-bold);
+  font-family: var(--font-main);
   font-size: var(--font-size-main);
+  font-variation-settings: "wght" var(--font-weight-bold);
 }
 
 .card__text-under-image {
   margin: 25px 25px 27px 25px;
-  font-weight: var(--font-weight-normal);
   font-size: var(--font-size-main);
 }
 
 .card__text-from-my-heart {
   margin: 0 25px 25px 25px;
-  font-weight: var(--font-weight-normal);
   font-size: var(--font-size-main);
 }
 
