@@ -75,7 +75,6 @@
 
 .button:focus-visible {
   box-shadow: 2px 2px 0 var(--border-color);
-  transition: box-shadow 0.3s ease;
 }
 
 .button::before {

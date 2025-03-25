@@ -45,7 +45,7 @@
   flex-direction: column;
   align-items: center;
   gap: 50px;
-  width: clamp(375px, 50%, 696px);
+  width: clamp(375px, 50%, 700px);
   margin: 0 auto;
 }
 
@@ -56,15 +56,21 @@
 
 .card__image {
   width: 100%;
-  height: auto;
+  border-top: 2px solid var(--border-color, #000);
+  border-bottom: 2px solid var(--border-color, #000);
+  overflow: hidden;
+  aspect-ratio: 1/1;
 }
 
 .card__label {
   position: absolute;
   top: 25px;
   right: 25px;
+  opacity: 0.5;
   font-family: var(--font-accent);
   font-size: var(--font-size-small);
+  text-shadow: -1px 0 var(--bd-color), 0 1px var(--bd-color),
+    1px 0 var(--bd-color), 0 -1px var(--bd-color);
 }
 
 @supports (
@@ -263,6 +269,10 @@
 
   .card__title {
     padding: 4px 10px 6px;
+  }
+
+  .card__label {
+    right: 13px;
   }
 
   .dialog__section {
